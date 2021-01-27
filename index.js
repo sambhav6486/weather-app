@@ -21,7 +21,7 @@ async function getWeather(location) {
     function showPosition() {
       if(navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
-            let WEATHER = `http://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=22390b7eb348128aa0ad1d3eb600e604`
+            let WEATHER = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=22390b7eb348128aa0ad1d3eb600e604`
               getWeather(WEATHER)
           });
       } else {
