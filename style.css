@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #93d9bb;
+    font-weight: bold;
+  }
+  .weather-container{
+   
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 500px;
+  }
+
+  .current-weather{
+    height: 170px;
+    background: url(https://www.holidify.com/images/cmsuploads/compressed/5621259188_e74d63cb05_b_20180302140149.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 20px;
+  }
+  .temperature{
+    text-align: center;
+    position: relative;
+    top: 15px;
+  }
+  .location{
+    padding-bottom: 25px;
+  }
+
+  
+
+  .upcoming-temp{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .day1{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search-location{
+    background-color: teal;
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 80px;
+  }
