@@ -42,7 +42,7 @@ async function getWeather(location) {
     let temp =Math.round(data.list[0].main.temp - 273.15)
     updateSeason(temp)
     showCelsius(temp)
-    showfahrenheit(temp)
+    convertToFahrenheit(temp)
     showIcon(data)
     cityName.text(`${data.city.name},${data.city.country}`)
   }
@@ -52,9 +52,13 @@ async function getWeather(location) {
     const icons = `https://openweathermap.org/img/wn/${icon.list[0].weather[0].icon}@2x.png`;
     iconValue.attr('src',icons)
   }
+
+  function convertToFahrenheit(celsius){
+    let inFahrenheit = (celsius * 9 / 5) + 32
+    showfahrenheit(inFahrenheit)
+  }
   function showfahrenheit(inFahrenheit){
-    let tempInFahrenheit = (inFahrenheit * 9 / 5) + 32
-    fahrenheit.text(`${tempInFahrenheit}°F`)
+    fahrenheit.text(`${inFahrenheit}°F`)
   }
 
   function showCelsius(inCelsius){
