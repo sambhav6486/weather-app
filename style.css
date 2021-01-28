@@ -13,16 +13,30 @@
     text-align: center;
     background: #93d9bb;
     font-weight: bold;
+    width: 100%;
   }
   .weather-container{
    
     box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
     width: 300px;
-    height: 500px;
+    height: 200px;
+  }
+  .weather{
+    position: relative;
+
+  }
+  .celsius{
+    position: absolute;
+    left: 120px;
+  }
+
+  .fahernite{
+    position: absolute;
+    left: 120px;
   }
 
   .current-weather{
-    height: 170px;
+    height: 200px;
     background: url(https://www.holidify.com/images/cmsuploads/compressed/5621259188_e74d63cb05_b_20180302140149.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,16 +44,24 @@
     padding-top: 10%;
     padding-bottom: 20px;
   }
+  img{
+    height: 50px;
+    width: 50px;
+  }
   .temperature{
     text-align: center;
     position: relative;
     top: 15px;
+    cursor: pointer;
   }
   .location{
     padding-bottom: 25px;
   }
 
   
+  .hidden{
+    visibility: hidden;
+  }
 
   .upcoming-temp{
     width: 100%;
@@ -49,7 +71,6 @@
     align-items: center;
     justify-content: center;
   }
-  
   .day1{
     width: 60%;
     display: flex;
